@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+        
+        .form-container {
+            width: 50%;
+            border: 2px solid #00a8e8;
+            border-left-width: 5px;
+            border-right-width: 5px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            text-decoration: underline 2px rgb(226, 153, 57);
+        }
+        
+        table {
+            width: 100%;
+            border-spacing: 15px;
+        }
+        
+        table td {
+            padding: 5px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .submit-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        button {
+            background-color: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Registration</h2>
+        <h3>Personal Details </h3>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="">Full Name</label></td>
+                    <td><label for="">Father Name </label></td>
+                    <td> <label for=""> Mother name</label></td>
+
+                </tr>
+                <tr>
+                    <td><input type="text" id="full-name" name="full-name" placeholder="Enter your name"></td>
+                    <td><input type="text" id="father-name" name="father-name" placeholder="Enter father name"></td>
+                    <td><input type="text" id="mother-name" name="mother-name" placeholder="Enter mother name"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><label for="">Full Name</label></td>
+                    <td><label for="email">Email</label></td>
+
+                </tr>
+                <tr>
+                    <td><input type="text" id="dob" name="dob" placeholder="Enter your DOB"></td>
+                    <td><input type="text" id="full-name" name="full-name" placeholder="Enter your name"></td>
+                    <td><input type="email" id="email" name="email" placeholder="Enter your email"></td>
+
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile Number</label></td>
+                    <td><label for="gender">Gender</label></td>
+                    <td><label for="address">Address</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="mobile" name="mobile" placeholder="Enter mobile number"></td>
+                    <td><input type="text" id="gender" name="gender" placeholder="Enter your gender"></td>
+                    <td colspan=""><input type="text" id="address" name="address" placeholder="Enter your address"></td>
+                </tr>
+            </table>
+            <h3>
+                Other details
+            </h3>
+            <table>
+                <tr>
+                    <td><label for="stream">Stream</label></td>
+                    <td><label for="previous-class">Previous Class</label></td>
+                    <td><label for="hobbies">Hobbies</label></td>
+                </tr>
+                <tr>
+
+                    <td><input type="text" id="stream" name="stream" placeholder="Enter your stream"></td>
+                    <td><input type="text" id="previous-class" name="previous-class" placeholder="Enter previous class"></td>
+                    <td><input type="text" id="hobbies" name="hobbies" placeholder="Enter your hobbies"></td>
+                </tr>
+                <tr>
+                    <td><label for="account-number">Account Number</label></td>
+                    <td><label for="religion">Religion</label></td>
+                    <td><label for="category">Category</label></td>
+
+                </tr>
+                <tr>
+                    <td><input type="text" id="account-number" name="account-number" placeholder="Enter account number"></td>
+                    <td><input type="text" id="religion" name="religion" placeholder="Enter your religion"></td>
+                    <td><input type="text" id="category" name="category" placeholder="Enter your category"></td>
+                </tr>
+            </table>
+            <div class="submit-button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
